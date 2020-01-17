@@ -1,90 +1,688 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>GlyTouCan:G00030MO</title>
-</head>
-<body>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
 
-<!-- SVG format -->
-<?xml version="1.0" standalone="yes"?>
-<svg viewbox='0 0 360 200' xmlns="http://www.w3.org/2000/svg">
-<!-- script -->
-<script type="text/ecmascript">
-    <![CDATA[
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Database Resources | GLIC</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Database Resources" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Glycoinformatics Consortium" />
+<meta property="og:description" content="Glycoinformatics Consortium" />
+<link rel="canonical" href="https://glic.glycoinfo.org/database/" />
+<meta property="og:url" content="https://glic.glycoinfo.org/database/" />
+<meta property="og:site_name" content="GLIC" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"https://glic.glycoinfo.org/database/","headline":"Database Resources","description":"Glycoinformatics Consortium","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
-    window.onload=function () {
-       var sugarNode = document.getElementsByClassName("gnode");
-       for (var i = 0; i < sugarNode.length; i++) {
-           sugarNode[i].addEventListener("click", mClick, false);
-      }
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="https://glic.glycoinfo.org/assets/css/style.css?v=8f80330292370b6414b9b829c38c5e3cb92cc40f">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">GLIC</h1>
+      <h2 class="project-tagline">Glycoinformatics Consortium</h2>
+      
+        <a href="https://github.com/glycoinfo/GLIC" class="btn">View on GitHub</a>
+      
+      
+    </section>
 
-    function mClick() {
-       var useExternalMethod = document.getElementById("extFlag").getAttribute("value");
-       if (useExternalMethod == "0") {
-           var nodeName = this.getAttribute("sugar_name");
-           window.open("https://pubchem.ncbi.nlm.nih.gov/compound/" + nodeName)
-       }
-    }
-    ]]>
-</script>
+    <section class="main-content">
+      <h2 id="database-resources">Database Resources</h2>
 
-<!-- image -->
-<desc value="0" id="extFlag"/>
-<line class='glink' stroke='black' x1='300' y1='112.5' x2='240' y2='112.5' id='Edge0'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='270' y='102.5' id='Label0'>&#x3b2;4</text>
-<line class='glink' stroke='black' x1='240' y1='112.5' x2='180' y2='112.5' id='Edge1'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='210' y='102.5' id='Label1'>&#x3b2;4</text>
-<line class='glink' stroke='black' x1='180' y1='112.5' x2='120' y2='150' id='Edge2'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='144' y='123.25' id='Label2'>&#x3b1;3</text>
-<line class='glink' stroke='black' x1='120' y1='150' x2='60' y2='150' id='Edge3'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='90' y='140' id='Label3'>&#x3b2;2</text>
-<line class='glink' stroke='black' x1='180' y1='112.5' x2='120' y2='75' id='Edge4'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='156' y='85.75' id='Label4'>&#x3b1;6</text>
-<line class='glink' stroke='black' x1='120' y1='75' x2='60' y2='100' id='Edge5'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='85' y='78.5' id='Label5'>&#x3b1;3</text>
-<line class='glink' stroke='black' x1='120' y1='75' x2='60' y2='50' id='Edge6'/>
-<text class='gtext' text-anchor='middle' dominant-baseline='central' x='95' y='53.5' id='Label6'>&#x3b1;6</text>
-<rect class='gnode' sugar_name='GlcNAc' stroke='black' width='24' height='24' x='288' y='100.5' fill='#0090BC' id='Node0' res_index='h' res_code='u2122h_2*NCC/3=O'/>
-<rect class='gnode' sugar_name='GlcNAc' stroke='black' width='24' height='24' x='228' y='100.5' fill='#0090BC' id='Node1' res_index='a' res_code='u2122h_2*NCC/3=O'/>
-<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='180' cy='112.5' fill='#00A651' id='Node2' res_index='b' res_code='u2122h_2*NCC/3=O'/>
-<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='120' cy='150' fill='#00A651' id='Node3' res_index='c' res_code='u2122h_2*NCC/3=O'/>
-<rect class='gnode' sugar_name='GlcNAc' stroke='black' width='24' height='24' x='48' y='138' fill='#0090BC' id='Node4' res_index='d' res_code='u2122h_2*NCC/3=O'/>
-<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='120' cy='75' fill='#00A651' id='Node5' res_index='e' res_code='u2122h_2*NCC/3=O'/>
-<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='60' cy='100' fill='#00A651' id='Node6' res_index='f' res_code='u2122h_2*NCC/3=O'/>
-<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='60' cy='50' fill='#00A651' id='Node7' res_index='g' res_code='u2122h_2*NCC/3=O'/>
+<p><a name="data1"></a></p>
 
-<!-- metadata -->
-<metadata>
-<?xml version="1.0" standalone="yes"?>
+<p><br /></p>
 
-<?xml version="1.0" encoding="utf-8" ?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:dc="http://purl.org/dc/terms/"
-         xmlns:ns0="http://purl.org/pav/"
-         xmlns:dc11="http://purl.org/dc/elements/1.1/"
-         xmlns:ns1="http://purl.jp/bio/12/glyco/glycan#">
-  <rdf:Description rdf:about="http://glytoucan.org/G00030MO/SVG">
-    <rdf:type rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000022"/>
-    <dc:license>
-      <dc:LicenseDocument rdf:about="https://creativecommons.org/publicdomain/zero/1.0/">
-      </dc:LicenseDocument>
-    </dc:license>
-    <dc:publisher rdf:resource="http://glytoucan.org"/>
-    <dc:title>SVG Image of GlyTouCan:G00030MO</dc:title>
-    <dc:identifier>G00030MO</dc:identifier>
-    <ns0:version>1.0</ns0:version>
-    <dc:date>2020-01-08</dc:date>
-    <dc11:format>image/svg+xml</dc11:format>
-    <dc11:language>en</dc11:language>
-    <ns1:sequence><![CDATA[WURCS=2.0/4,7,6/[u2122....]]></ns1:sequence>
-  </rdf:Description>
-</rdf:RDF>
-</metadata>
+<p><br /></p>
+
+<h3 id="glycomedb">GlycomeDB</h3>
+<p>Meta database that integrates the structures from several glycomics databases (CFG, KEGG, GLYCOSCIENCES.de, GlycoBase, JCGGDB, BCSDB, PDB, GlycO and Carbbank) into one consistent sequence representation and creating a unique index of all structures present in the integrated database. Species annotations from the other databases are retrieved as well and integrated using the NCBI Taxonomy. Each structure in GlycomeDB is linked back to the original database allowing finding and browsing all occurrences of a structure in multiple databases.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>structure, databases references, species annotation</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>structure search, sub-structure search, similarity search, maximum common substructure search, species search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://www.glycome-db.org">http://www.glycome-db.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>on request</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Rene Ranzinger: <a href="mailto:rene@ccrc.uga.edu">rene@ccrc.uga.edu</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data2"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="unicarbkb">UniCarbKB</h3>
+<p>The UniCarb KnowledgeBase (UniCarbKB) offers public access to a growing, curated database of information on the glycan structures of glycoproteins. UniCarbKB is an international effort that aims to further our understanding of structures, pathways and networks involved in glycosylation and glyco-mediated processes by integrating structural, experimental and functional glycoscience information. This initiative builds upon the success of the glycan structure database GlycoSuiteDB, together with the informatic standards introduced by EUROCarbDB, to provide a high-quality and updated resource to support glycomics and glycoproteomics research. UniCarbKB provides comprehensive information concerning glycan structures, and published glycoprotein information including global and site-specific attachment information.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>structure, glycoproteins, site-specific information, databases references, species annotation, tissue, cell line, biological fluid, methods</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>structure search, sub-structure search, species search, glycoprotein search, UniProtKB accession number search, tissue search, composition search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://unicarbkb.org">http://unicarbkb.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>CC</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>The National eResearch Collaboration Tools and Resources (NeCTAR) Project; Swiss National Science Foundation</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>Continued curation, better integration and support for GlycoRDF, improved search and query functionality</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>Release 1 GitHub public, On-going developments BitBucket user managed</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data3"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="carbohydrate-structure-database-csdb">Carbohydrate Structure Database (CSDB)</h3>
+<p>The Carbohydrate Structure Databases (CSDBs) store structural, bibliographic, taxonomic, NMR spectroscopic, and other data on natural carbohydrates and their derivatives published in the scientific literature. The CSDB project was launched in 2005 for bacterial saccharides (as BCSDB). Currently, it includes two parts, the Bacterial CSDB and the Plant&amp;Fungal CSDB. In March 2015, these databases were merged to the single Carbohydrate Structure Database (CSDB). The combined CSDB includes information on bacterial and archaeal glycans and derivatives (the coverage is close to complete), as well as on plant and fungal glycans and glycoconjugates (almost all structures published up to 1998). CSDB is regularly updated via manual expert annotation of original publications. Both newly annotated data and data imported from other databases are manually curated. The CSDB data are exportable in a number of modern formats, such as GlycoRDF. CSDB provides additional services for simulation of 1H, 13C and 2D NMR spectra of saccharides, NMR-based structure prediction, glycan-based taxon clustering, and other.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>structures, NMR spectra, taxon annotations, bibliographic annatations, databases references, supplementary data</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>structure search, sub-structure search, composition search, taxon search, bibliography search, NMR signal search, id search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://csdb.glycoscience.ru">http://csdb.glycoscience.ru</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>None (free)</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>Russian Foundation for Basic Research</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>see papers</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Phyl Toukach: <a href="mailto:netbox@toukach.ru">netbox@toukach.ru</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data4"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="sugarbinddb">SugarBindDB</h3>
+<p>The SugarBind Database (SugarBindDB) covers knowledge of glycan binding of human pathogen lectins and adhesins. It is a curated database; each glycan-binding event is associated with at least one published reference. The core data of SugarBindDB is a triple constituted of a pathogenic agent, a lectin/adhesin and a glycan ligand. SugarBindDB content is displayed in views. All views are interconnected.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>structure, pathogenic lectin/adhesin, protein-carbohydrate interactions, cross-references, binding annotation, tissue, disease, symptoms, methods</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>species search, lectin search, ligand search, tissue search, disease search, multi-criteria search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://sugarbind.expasy.org">http://sugarbind.expasy.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>CC</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>SIB Swiss Institute of Bioinformatics + Swiss National Fund</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>increased data integration, continued data curation, addition of binding prediction tools</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td><a href="https://bitbucket.org/sib-pig/sugarbind">https://bitbucket.org/sib-pig/sugarbind</a></td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data5"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="glycosciencesdb">Glycosciences.DB</h3>
+<p>Database of the Glycosciences.de portal. Contains CarbBank structures + PDB carbohydrates + structures with NMR shifts extracted from the literature.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>structure, 3D structure models, pdb data, nmr shifts, species annotation, literature references</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>structure search, sub-structure search, motif search, n-glycan properties search, literature search, nmr peak search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://www.glycosciences.de/database">http://www.glycosciences.de/database</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Thomas Lütteke: <a href="mailto:thomas.luetteke@vetmed.uni-giessen.de">thomas.luetteke@vetmed.uni-giessen.de</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data6"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="monosaccharidedb">MonosaccharideDB</h3>
+<p>Monosaccharide database. Contains monosaccharides + name parsing / encoding routines.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>monosaccharide properties, residue names</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>name search, properties search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://www.mononsaccharidedb.org">http://www.mononsaccharidedb.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Thomas Lütteke: <a href="mailto:thomas.luetteke@vetmed.uni-giessen.de">thomas.luetteke@vetmed.uni-giessen.de</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data7"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="glycomapsdb">GlycoMapsDB</h3>
+<p>Database of conformational maps of glycosidic linkages</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>conformational maps derived from MD simulations</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>disaccharide search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://www.glycosciences.de/modeling/glycomapsdb">http://www.glycosciences.de/modeling/glycomapsdb</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Thomas Lütteke: <a href="mailto:thomas.luetteke@vetmed.uni-giessen.de">thomas.luetteke@vetmed.uni-giessen.de</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data8"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="glytoucan">GlyTouCan</h3>
+<p>Glycan structure/sequence/composition repository</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>Glycan structures, as images, GlycoCT and WURCS, and their motifs, monosaccharides and linked to other related databases including GlycomeDB, BCSDB, GlycoEpitope, with others continuing to be added. Each glycan structure is assigned a GlyTouCan ID.</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>Graphical and textual substructure search, ID search and motif search</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://www.glytoucan.org">http://www.glytoucan.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>CC-BY</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>Integrated Database Project of Japan</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>Incorporation of UniCarbKB and other JCGGDB databases</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>open source</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Kiyoko F. Aoki-Kinoshita: <a href="mailto:kkiyoko@soka.ac.jp">kkiyoko@soka.ac.jp</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data9"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="glycopattern">GlycoPattern</h3>
+<p>GlycoPattern is Web-based bioinformatics resource to
+support the analysis of glycan array data for the Consortium for Functional Glycomics. This resource includes algorithms and tools to discover structural motifs, a heatmap visualization to compare multiple experiments, hierarchical clustering of Glycan Binding Proteins with respect to their binding motifs and a structural search feature on the experimental data.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="https://glycopattern.emory.edu">https://glycopattern.emory.edu</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td><a href="mailto:sanjay.agravat@emory.edu">sanjay.agravat@emory.edu</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data10"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="unicarb-db">UniCarb-DB</h3>
+<p>UniCarb-DB is the glycomics fragmentation database that stores, integrates and processes data from manually annotated ms spectra.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>MS/MS spectra, structures, peak lists, references, methods, tissue and taxonomy annotations</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td>Species, tissue, composition, recorded mass, observed mass, peak list</td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="http://www.unicarb-db.org">http://www.unicarb-db.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>CC</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>Stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>NeCTAR, ANDS, STINT, SIB ExPASy</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td>Open Source</td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td><a href="mailto:niclas.karlsson@medkem.gu.se">niclas.karlsson@medkem.gu.se</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="data11"></a></p>
+
+<p><br /></p>
+
+<p><br /></p>
+
+<h3 id="glyconavi">GlycoNAVI</h3>
+<p>GlycoNAVI is the Carbohydrate database to support carbohydrate research. Contains glycan structures, chemical synthesis, anomeric isomer proportion, NMR spectra, activity, 3D-structures, and carbohydrate-protein interaction extracted from literatures.</p>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>Glycan structures, chemical synthesis, carbohydrate-protein interaction, 3D-structures, and linked to other related databases.</td>
+    </tr>
+    <tr>
+      <td><strong>Search Options</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Availability</strong></td>
+      <td><a href="https://glyconavi.org">https://glyconavi.org</a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>CC-BY</td>
+    </tr>
+    <tr>
+      <td><strong>Status</strong></td>
+      <td>stable, maintained</td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>Integrated Database Project of Japan, KAKENHI</td>
+    </tr>
+    <tr>
+      <td><strong>Future Plans</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Code Availablity</strong></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>Issaku Yamada: <a href="mailto:yamadaissaku@gmail.com">yamadaissaku@gmail.com</a></td>
+    </tr>
+  </tbody>
+</table>
 
 
-</svg>
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/glycoinfo/GLIC">GLIC</a> is maintained by <a href="https://github.com/glycoinfo">glycoinfo</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
 
-</body>
+    
+  </body>
 </html>
