@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Site sample</title>
 <meta charset="UTF-8">
+<title>GlyTouCan:G00030MO</title>
 </head>
 <body>
-<h1>text sample</h1>
-<p>
-line
-</p>
+
+<!-- SVG format -->
+<?xml version="1.0" standalone="yes"?>
+<svg viewbox='0 0 360 200' xmlns="http://www.w3.org/2000/svg">
+<!-- script -->
+<script type="text/ecmascript">
+    <![CDATA[
+
+    window.onload=function () {
+       var sugarNode = document.getElementsByClassName("gnode");
+       for (var i = 0; i < sugarNode.length; i++) {
+           sugarNode[i].addEventListener("click", mClick, false);
+      }
+    }
+
+    function mClick() {
+       var useExternalMethod = document.getElementById("extFlag").getAttribute("value");
+       if (useExternalMethod == "0") {
+           var nodeName = this.getAttribute("sugar_name");
+           window.open("https://pubchem.ncbi.nlm.nih.gov/compound/" + nodeName)
+       }
+    }
+    ]]>
+</script>
+
+<!-- image -->
+<desc value="0" id="extFlag"/>
+<line class='glink' stroke='black' x1='300' y1='112.5' x2='240' y2='112.5' id='Edge0'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='270' y='102.5' id='Label0'>&#x3b2;4</text>
+<line class='glink' stroke='black' x1='240' y1='112.5' x2='180' y2='112.5' id='Edge1'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='210' y='102.5' id='Label1'>&#x3b2;4</text>
+<line class='glink' stroke='black' x1='180' y1='112.5' x2='120' y2='150' id='Edge2'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='144' y='123.25' id='Label2'>&#x3b1;3</text>
+<line class='glink' stroke='black' x1='120' y1='150' x2='60' y2='150' id='Edge3'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='90' y='140' id='Label3'>&#x3b2;2</text>
+<line class='glink' stroke='black' x1='180' y1='112.5' x2='120' y2='75' id='Edge4'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='156' y='85.75' id='Label4'>&#x3b1;6</text>
+<line class='glink' stroke='black' x1='120' y1='75' x2='60' y2='100' id='Edge5'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='85' y='78.5' id='Label5'>&#x3b1;3</text>
+<line class='glink' stroke='black' x1='120' y1='75' x2='60' y2='50' id='Edge6'/>
+<text class='gtext' text-anchor='middle' dominant-baseline='central' x='95' y='53.5' id='Label6'>&#x3b1;6</text>
+<rect class='gnode' sugar_name='GlcNAc' stroke='black' width='24' height='24' x='288' y='100.5' fill='#0090BC' id='Node0' res_index='h' res_code='u2122h_2*NCC/3=O'/>
+<rect class='gnode' sugar_name='GlcNAc' stroke='black' width='24' height='24' x='228' y='100.5' fill='#0090BC' id='Node1' res_index='a' res_code='u2122h_2*NCC/3=O'/>
+<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='180' cy='112.5' fill='#00A651' id='Node2' res_index='b' res_code='u2122h_2*NCC/3=O'/>
+<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='120' cy='150' fill='#00A651' id='Node3' res_index='c' res_code='u2122h_2*NCC/3=O'/>
+<rect class='gnode' sugar_name='GlcNAc' stroke='black' width='24' height='24' x='48' y='138' fill='#0090BC' id='Node4' res_index='d' res_code='u2122h_2*NCC/3=O'/>
+<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='120' cy='75' fill='#00A651' id='Node5' res_index='e' res_code='u2122h_2*NCC/3=O'/>
+<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='60' cy='100' fill='#00A651' id='Node6' res_index='f' res_code='u2122h_2*NCC/3=O'/>
+<circle class='gnode' sugar_name='Man' stroke='black' r='12' cx='60' cy='50' fill='#00A651' id='Node7' res_index='g' res_code='u2122h_2*NCC/3=O'/>
+
+<!-- metadata -->
+<metadata>
+<?xml version="1.0" standalone="yes"?>
+
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns0="http://purl.org/pav/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:ns1="http://purl.jp/bio/12/glyco/glycan#">
+  <rdf:Description rdf:about="http://glytoucan.org/G00030MO/SVG">
+    <rdf:type rdf:resource="http://www.ebi.ac.uk/swo/data/SWO_3000022"/>
+    <dc:license>
+      <dc:LicenseDocument rdf:about="https://creativecommons.org/publicdomain/zero/1.0/">
+      </dc:LicenseDocument>
+    </dc:license>
+    <dc:publisher rdf:resource="http://glytoucan.org"/>
+    <dc:title>SVG Image of GlyTouCan:G00030MO</dc:title>
+    <dc:identifier>G00030MO</dc:identifier>
+    <ns0:version>1.0</ns0:version>
+    <dc:date>2020-01-08</dc:date>
+    <dc11:format>image/svg+xml</dc11:format>
+    <dc11:language>en</dc11:language>
+    <ns1:sequence><![CDATA[WURCS=2.0/4,7,6/[u2122....]]></ns1:sequence>
+  </rdf:Description>
+</rdf:RDF>
+</metadata>
+
+
+</svg>
+
 </body>
 </html>
