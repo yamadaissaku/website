@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>サンプル</title>
-<script>
-    $.ajax({
-  url: 'https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json'
-}).done(function(json) {
-  for(var i=0; i<json.length; i++) {
-    $('#a').append(json[i].version + ' ' + json[i].description + '<br>');
-  }
-}).fail(function() {
-  $('#a').text('ERROR');
-});
-</script>
+<title>JSON get sample</title>
 </head>
 <body>
-<div id="a"></div>
+
+<span id="view_json"></span>	
+<script type="text/javascript">
+document.getElementById("view_json").innerHTML = getJSON();
+		
+function getJSON() {	
+	$.ajax({
+      url: 'https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json',
+    type: "GET",
+    timeout: 10000
+}).done(function(data, status, xhr) {
+    $("#result").html(data);
+}).fail(function(xhr, status, error) {
+    $("#log").append("xhr.status = " + xhr.status + "<br>");          // 例: 404
+    $("#log").append("xhr.statusText = " + xhr.statusText + "<br>");  // 例: Not Found
+    $("#log").append("status = " + status + "<br>");                  // 例: error
+    $("#log").append("error = " + error + "<br>");                    // 例: Not Found
+});
+	
+}
+</script>
     
     
 <span id="view_time"></span>
