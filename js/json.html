@@ -20,7 +20,7 @@ document.getElementById("view_time").innerHTML = getNow();
 
 		// 送信するデータは、フォームの内容をserialize()しています
 		// serialize()の内容は、cs1=custom1&cs2=custom2です
-		const testData = $("#form1").serialize();
+		const testData = ""; //$("#form1").serialize();
 
 		// 1. $.getJSONメソッドで通信を行う
 		$.getJSON(url,testData)
@@ -61,7 +61,7 @@ document.getElementById("view_time").innerHTML = getNow();
 <p>表示3：<span id="span3"></span></p>
 <p>description：<span id="description"></span></p>
 <p>表示4：<span id="span4"></span></p>
-
+<!--
 <form id="form1">
 <input type="button" id="button1" value="ボタン1">
 <p>テキストボックス１</p>
@@ -69,6 +69,6 @@ document.getElementById("view_time").innerHTML = getNow();
 <p>テキストボックス２</p>
 <input type="text" name="cs2" value="custom2" maxlength="10">
 </form>
-
+-->
 </body>
 </html>
