@@ -29,6 +29,10 @@ $(function() {
 
 				// 3. キーを指定して値を表示
 				$("#span3").text(data1[0]["name"]);
+			
+			
+			// description キーを指定して値を表示
+				$("#description").text(data1[0]["description"]);
 
 				// 4. JavaScriptオブジェクトをJSONに変換
 				const data2 = JSON.stringify(data1);
@@ -53,6 +57,7 @@ $(function() {
 <p>表示1：<span id="span1"></span></p>
 <p>表示2：<span id="span2"></span></p>
 <p>表示3：<span id="span3"></span></p>
+<p>description：<span id="description"></span></p>
 <p>表示4：<span id="span4"></span></p>
 
 <form id="form1">
