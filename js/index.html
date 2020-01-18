@@ -3,7 +3,6 @@
 <head>
 <title>サンプル</title>
 <script>
-window.onload = function() {
     $.ajax({
   url: 'https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json'
 }).done(function(json) {
@@ -13,10 +12,6 @@ window.onload = function() {
 }).fail(function() {
   $('#a').text('ERROR');
 });
-
-    
-  
-}
 </script>
 </head>
 <body>
