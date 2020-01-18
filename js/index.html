@@ -5,10 +5,10 @@
 <title>jqueryのgetJSONのサンプル</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-$(function() {
+//$(function() {
 	//$("#button1").click(
-	function(){
-		$("#span1").text("データ取得中です");
+	function test(){
+		//$("#span1").text("データ取得中です");
 
 		// 送信先のURL
 		const url = "https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json";
@@ -45,10 +45,10 @@ $(function() {
 				$("#span4").text("完了しました");
 			});
 	//});
-} );
+//} );
 </script>
 </head>
-<body >
+<body onLoad="test()">
 
 <p>表示1：<span id="span1"></span></p>
 <p>表示2：<span id="span2"></span></p>
