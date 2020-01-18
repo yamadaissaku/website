@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>jqueryのgetJSONのサンプル</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-<body >
-
-	<span id="view_time"></span>
-
-<script type="text/javascript">
+  <head>
+    <meta charset="utf-8">
+    <title>jqueryのgetJSONのサンプル</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body >
+    <span id="view_time"></span>
+    <script type="text/javascript">
 document.getElementById("view_time").innerHTML = getNow();
 
 	function getNow() {
@@ -26,7 +24,7 @@ document.getElementById("view_time").innerHTML = getNow();
 		$.getJSON(url,testData)
 		//$.getJSON(url)
 
-			// 2. doneは、通信に成功した時に実行される
+{			// 2. doneは、通信に成功した時に実行される
 			//  引数のdata1は、通信で取得したデータ
 			.done(function(data1,textStatus,jqXHR) {
 				$("#span1").text(jqXHR.status); //例：200
@@ -52,16 +50,26 @@ document.getElementById("view_time").innerHTML = getNow();
 			// 6. alwaysは、成功/失敗に関わらず実行される
 			.always(function() {
 				$("#span4").text("完了しました");
-			});
+			});}
+		};
 
 </script>
-	
-<p>表示1：<span id="span1"></span></p>
-<p>表示2：<span id="span2"></span></p>
-<p>表示3：<span id="span3"></span></p>
-<p>description：<span id="description"></span></p>
-<p>表示4：<span id="span4"></span></p>
-<!--
+    <p>表示1：
+      <span id="span1"></span>
+    </p>
+    <p>表示2：
+      <span id="span2"></span>
+    </p>
+    <p>表示3：
+      <span id="span3"></span>
+    </p>
+    <p>description：
+      <span id="description"></span>
+    </p>
+    <p>表示4：
+      <span id="span4"></span>
+    </p>
+    <!--
 <form id="form1">
 <input type="button" id="button1" value="ボタン1">
 <p>テキストボックス１</p>
@@ -70,5 +78,5 @@ document.getElementById("view_time").innerHTML = getNow();
 <input type="text" name="cs2" value="custom2" maxlength="10">
 </form>
 -->
-</body>
+  </body>
 </html>
