@@ -2,29 +2,23 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>jqueryのgetJSONのサンプル</title>
+    <title>getNow</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body >
     <span id="view_time"></span>
     <script type="text/javascript">
-document.getElementById("view_time").innerHTML = getNow();
+		document.getElementById("view_time").innerHTML = getNow();
 
-	function getNow() {
+	function getNow(){
 		$("#span1").text("データ取得中です");
 
 		// 送信先のURL
 		const url = "https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json";
 
-		// 送信するデータは、フォームの内容をserialize()しています
-		// serialize()の内容は、cs1=custom1&cs2=custom2です
-		const testData = ""; //$("#form1").serialize();
+		$.getJSON(url)
 
-		// 1. $.getJSONメソッドで通信を行う
-		$.getJSON(url,testData)
-		//$.getJSON(url)
-
-{			// 2. doneは、通信に成功した時に実行される
+			// 2. doneは、通信に成功した時に実行される
 			//  引数のdata1は、通信で取得したデータ
 			.done(function(data1,textStatus,jqXHR) {
 				$("#span1").text(jqXHR.status); //例：200
@@ -32,9 +26,6 @@ document.getElementById("view_time").innerHTML = getNow();
 
 				// 3. キーを指定して値を表示
 				$("#span3").text(data1[0]["name"]);
-			
-			
-			// description キーを指定して値を表示
 				$("#description").text(data1[0]["description"]);
 
 				// 4. JavaScriptオブジェクトをJSONに変換
@@ -49,24 +40,24 @@ document.getElementById("view_time").innerHTML = getNow();
 			})
 			// 6. alwaysは、成功/失敗に関わらず実行される
 			.always(function() {
-				$("#span4").text("完了しました");
-			});}
-	    });}
+				$("#span4").text("Fin");
+			});
+	};
 
 </script>
-    <p> v1：
+    <p>Status: 
       <span id="span1"></span>
     </p>
-    <p>表示2：
+    <p>Result: 
       <span id="span2"></span>
     </p>
-    <p>表示3：
+    <p>Database: 
       <span id="span3"></span>
     </p>
     <p>description：
       <span id="description"></span>
     </p>
-    <p>表示4：
+    <p>Result:
       <span id="span4"></span>
     </p>
     <!--
