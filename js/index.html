@@ -28,7 +28,7 @@ function() {
 				$("#span2").text(textStatus); //例：success
 
 				// 3. キーを指定して値を表示
-				$("#span3").text(data1["name"]);
+				$("#span3").text(data1[0]["name"]);
 
 				// 4. JavaScriptオブジェクトをJSONに変換
 				const data2 = JSON.stringify(data1);
