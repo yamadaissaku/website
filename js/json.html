@@ -4,10 +4,14 @@
 <meta charset="utf-8">
 <title>jqueryのgetJSONのサンプル</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(function() {
-	$("#button1").click(
-	function(){
+
+	
+<span id="view_time"></span>
+
+<script type="text/javascript">
+document.getElementById("view_time").innerHTML = getNow();
+
+	function getNow() {
 		$("#span1").text("データ取得中です");
 
 		// 送信先のURL
@@ -48,8 +52,7 @@ $(function() {
 			.always(function() {
 				$("#span4").text("完了しました");
 			});
-	});
-} );
+
 </script>
 </head>
 <body >
