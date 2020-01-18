@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>jqueryのgetJSONのサンプル</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.min.js"></script>
 <script>
 $( function() {
 	$("#button1").click(
@@ -11,14 +11,15 @@ $( function() {
 		$("#span1").text("データ取得中です");
 
 		// 送信先のURL
-		const url = "http://httpbin.org/get";
+		const url = "https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json";
 
 		// 送信するデータは、フォームの内容をserialize()しています
 		// serialize()の内容は、cs1=custom1&cs2=custom2です
 		const testData = $("#form1").serialize();
 
 		// 1. $.getJSONメソッドで通信を行う
-		$.getJSON(url,testData)
+		//$.getJSON(url,testData)
+		$.getJSON(url)
 
 			// 2. doneは、通信に成功した時に実行される
 			//  引数のdata1は、通信で取得したデータ
@@ -27,7 +28,7 @@ $( function() {
 				$("#span2").text(textStatus); //例：success
 
 				// 3. キーを指定して値を表示
-				$("#span3").text(data1["args"]["cs1"]);
+				$("#span3").text(data1["name"]);
 
 				// 4. JavaScriptオブジェクトをJSONに変換
 				const data2 = JSON.stringify(data1);
