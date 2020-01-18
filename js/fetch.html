@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
+<script type='text/javascript'>
+function test_click() {
+    const url = 'http://192.168.1.101:8001/';
+    fetch(url).then(function(response) {
+        return response.json();
+    }).then(function(json) {
+        var result = document.querySelector('#result');
+        result.innerHTML = json.version;
+    });
+};
+</script>
+</head>
+<body>
+    <h3>fetchテスト</h3>
+    <input type="button" id="test" value="テスト" onclick="test_click()">
+    <div id="result">
+</body>
+</html>
