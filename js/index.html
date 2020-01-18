@@ -4,10 +4,18 @@
 <title>サンプル</title>
 <script>
 window.onload = function() {
-  setInterval(function() {
-    var dd = new Date();
-    document.getElementById("T1").innerHTML = dd.toLocaleString();
-  }, 1000);
+    $.ajax({
+  url: 'https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json'
+}).done(function(json) {
+  for(var i=0; i<json.length; i++) {
+    $('#a').append(json[i].version + ' ' + json[i].description + '<br>');
+  }
+}).fail(function() {
+  $('#a').text('ERROR');
+});
+
+    
+  
 }
 </script>
 </head>
