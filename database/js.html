@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>getNow</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body >
+    <span id="view_time"></span>
+    <script type="text/javascript">
+		document.getElementById("view_time").innerHTML = getNow();
+
+	function getNow(){
+		$("#span1").text("データ取得中です");
+
+		// 送信先のURL
+		const url = "https://raw.githubusercontent.com/ReneRanzinger/GLIC-Tools-update/master/JSON/example/example.database.json";
+
+		$.getJSON(url)
+
+			// 2. doneは、通信に成功した時に実行される
+			//  引数のdata1は、通信で取得したデータ
+			.done(function(data1,textStatus,jqXHR) {
+				$("#span1").text(jqXHR.status); //例：200
+				$("#span2").text(textStatus); //例：success
+
+				// 3. キーを指定して値を表示
+				$("#name").text(data1[0]["name"]);
+
+				$("#version").text(data1[0]["version"]);
+
+				$("#description").text(data1[0]["description"]);
+
+				$("#webpage").text(data1[0]["webpage"]);
+
+				$("#last_update").text(data1[0]["last_update"]);
+
+				$("#license_data_name").text(data1[0]["license_data"]["name"]);				
+				$("#license_data_abbr").text(data1[0]["license_data"]["abbr"]);
+				$("#license_data_url").text(data1[0]["license_data"]["url"]);
+
+				$("#funding_agency").text(data1[0]["funding"][0]["agency"]);				
+				$("#funding_grant").text(data1[0]["funding"][0]["grant"]);
+				$("#funding_url").text(data1[0]["funding"][0]["url"]);
+				$("#funding_start").text(data1[0]["funding"][0]["start"]);
+				$("#funding_end").text(data1[0]["funding"][0]["end"]);
+
+
+
+				$("#data_type0").text(data1[0]["data"][0]["type"]);
+				$("#data_count0").text(data1[0]["data"][0]["count"]);
+
+				$("#data_type1").text(data1[0]["data"][1]["type"]);
+				$("#data_count1").text(data1[0]["data"][1]["count"]);
+
+				$("#data_type2").text(data1[0]["data"][2]["type"]);
+				$("#data_count2").text(data1[0]["data"][2]["count"]);
+
+
+
+				$("#contact_name").text(data1[0]["contact"][0]["name"]);				
+				$("#contact_email").text(data1[0]["contact"][0]["email"]);
+				$("#contact_phone").text(data1[0]["contact"][0]["phone"]);
+				$("#contact_affiliation").text(data1[0]["contact"][0]["affiliation"]);
+
+				// 4. JavaScriptオブジェクトをJSONに変換
+				const data2 = JSON.stringify(data1);
+				console.log(data2); //コンソールにJSONが表示される
+			})
+			// 5. failは、通信に失敗した時に実行される
+			.fail(function(jqXHR, textStatus, errorThrown ) {
+				$("#span1").text(jqXHR.status); //例：404
+				$("#span2").text(textStatus); //例：error
+				$("#name").text(errorThrown); //例：NOT FOUND
+			})
+			// 6. alwaysは、成功/失敗に関わらず実行される
+			.always(function() {
+				$("#span4").text("Fin");
+			});
+	};
+
+</script>
+
+
+    <p>Status: 
+      <span id="span1"></span>
+    </p>
+    <p>Result: 
+      <span id="span2"></span>
+    </p>
+    <p>Result:
+      <span id="span4"></span>
+    </p>
+
+
+
+<h3 id="unicarbkb"><span id="name"></span></h3>
+<p><span id="description"></span></p>
+
+<table border=1>
+  <thead>
+  <tbody>
+  	<tr>
+      <td><strong>Version</strong></td>
+      <td><span id="version"></span></td>
+    </tr>
+    <tr>
+      <td><strong>Data in Database</strong></td>
+      <td>
+      	<ul>
+      	<li><span id="data_type0"></span>: <span id="data_count0"></span></li>
+      	<li><span id="data_type1"></span>: <span id="data_count1"></span></li>
+      	<li><span id="data_type2"></span>: <span id="data_count2"></span></li>
+      </ul>
+  	</td>
+    </tr>
+      <td><strong>Availability</strong></td>
+      <td><a href=<span id="webpage">></span><span id="webpage"></span></a></td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>
+      	<span id="license_data_name"></span><br>
+      	<a href=<span id="license_data_abbr">></span><span id="license_data_url"></span></a><br>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>last update</strong></td>
+      <td><span id="last_update"></span></td>
+    </tr>
+    <tr>
+      <td><strong>Funding</strong></td>
+      <td>
+      	<ul>
+      		<li><span id="funding_agency"></span></li>
+      		<ul>
+      			<li></span><span id="funding_grant"></span></li>
+      			<li><a href=<span id="funding_url"></span>></a></li>
+      			<li><span id="funding_start"></span> ~ <span id="funding_end"></span></li>
+      		</ul>
+      	</ul>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>Contact</strong></td>
+      <td>
+      	<ul>
+      		<li><span id="contact_name"></span></li>
+      		<ul>
+      			<li>email: <span id="contact_email"></span></li>
+      			<li>phone: <span id="contact_phone"></span></li>
+      			<li>affiliation: <span id="contact_affiliation"></span></li>
+      		</ul>
+      	</ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+  </body>
+</html>
